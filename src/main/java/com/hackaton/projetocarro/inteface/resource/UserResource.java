@@ -3,10 +3,7 @@ package com.hackaton.projetocarro.inteface.resource;
 import com.hackaton.projetocarro.core.entity.UserEntity;
 import com.hackaton.projetocarro.core.usecase.CreateUser;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("user")
@@ -16,6 +13,7 @@ public class UserResource {
 
     public UserResource(
             CreateUser createUser
+
     ) {
         this.createUser = createUser;
     }
